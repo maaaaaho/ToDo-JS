@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ToDo(JS)</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="input-area">
+      <input placeholder="ToDoを入力" />
+      <!--何を入力するか-->
+      <button id="add-button">追加</button>
+      <!--idは一意であれば何でもよい-->
+    </div>
+    <div class="incomplete-area">
+      <p class="title">未完了のToDo</p>
+      <!--何のエリアか-->
+      <ul>
+        <!--リストを並べる-->
+        <div class="list-row">
+          <!--後でcssで調整したいから-->
+          <li>ToDoです</li>
+          <!--※アンチパターン。本来はliの中にdiv-->
+          <button>完了</button>
+          <button>削除</button>
+        </div>
+        <div class="list-row">
+          <!--後でcssで調整したいから-->
+          <li>ToDoです</li>
+          <!--※アンチパターン。本来はliの中にdiv-->
+          <button>完了</button>
+          <button>削除</button>
+        </div>
+      </ul>
+    </div>
+    <div class="complete-area">
+      <p class="title">完了したToDo</p>
+      <ul>
+        <div class="list-row">
+          <li>ToDoでした</li>
+          <button>戻す</button>
+        </div>
+      </ul>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
